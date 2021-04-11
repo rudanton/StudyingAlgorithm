@@ -1,0 +1,9 @@
+Kong/happyNumber/happyNumber/Debug/
+Kong/merge sort/.vs/
+Kong/merge sort/merge sort/x64/
+Kong/Pivonacci/.vs/
+*.db
+*.idb
+*.tlog
+*.lastbuildstate
+*.ipch
