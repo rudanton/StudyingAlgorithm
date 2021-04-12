@@ -7,3 +7,4 @@ Kong/Pivonacci/.vs/
 *.tlog
 *.lastbuildstate
 *.ipch
+*.opendb

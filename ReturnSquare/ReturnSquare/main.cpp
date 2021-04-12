@@ -14,17 +14,24 @@ int solution(vector<vector<int>> board)
 		h = 0;
 		for (int j = 0; j < board[i].size(); j++)
 		{
+			if (i == 0)v.push_back(0);
 			if (board[i][j] == 1)
 			{
 				h++;
+				v[j]++;
 			}
 			if (h > maxH)maxH = h;
 			if (board[i][j] == 0)
 			{
 				h = 0;
+				v[j] = 0;
 			}
 		}
 
+	}
+	for (int i : v)
+	{
+		if (maxV <= i)maxV = i;
 	}
 	
 	if (maxH >= maxV) answer = maxV * maxV;
