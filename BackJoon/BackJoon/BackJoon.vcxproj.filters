@@ -19,6 +19,12 @@
     <Filter Include="소스 파일\BackJoon\Np.10818 Maximum, minimum">
       <UniqueIdentifier>{55c700b3-c226-41bd-85b1-4abbb84b5b38}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\BackJoon\No. 2460. Inteligent Train">
+      <UniqueIdentifier>{13e3640c-6c4f-43a4-b8e6-1014c41a9227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Programers">
+      <UniqueIdentifier>{de4f692b-965e-4c92-aa93-f29b83f4dedd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -27,6 +33,9 @@
     <ClInclude Include="BJ10818.h">
       <Filter>소스 파일\BackJoon\Np.10818 Maximum, minimum</Filter>
     </ClInclude>
+    <ClInclude Include="BJ2460.h">
+      <Filter>소스 파일\BackJoon\No. 2460. Inteligent Train</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -34,6 +43,9 @@
     </ClCompile>
     <ClCompile Include="BJ10818.cpp">
       <Filter>소스 파일\BackJoon\Np.10818 Maximum, minimum</Filter>
+    </ClCompile>
+    <ClCompile Include="BJ2460.cpp">
+      <Filter>소스 파일\BackJoon\No. 2460. Inteligent Train</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
