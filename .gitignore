@@ -8,3 +8,13 @@ Kong/Pivonacci/.vs/
 *.lastbuildstate
 *.ipch
 *.opendb
+BackJoon/.vs/BackJoon/v16/.suo
+MergeSort/.vs/MergeSort/v16/.suo
+*.exe
+*.recipe
+*.ilk
+*.pdb
+*.log
+*.obj
+*.txt
+SingleLinkedList/.vs/SingleLinkedList/v16/.suo
