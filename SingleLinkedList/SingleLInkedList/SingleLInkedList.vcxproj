@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{AF53CBA2-8B5A-4B8B-A161-C041EDF3E52A}</ProjectGuid>
-    <RootNamespace>BackJoon</RootNamespace>
+    <ProjectGuid>{108718D5-9CFA-4A03-8129-3EFF4B7EF613}</ProjectGuid>
+    <RootNamespace>SingleLInkedList</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,14 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BJ10818.cpp" />
-    <ClCompile Include="BJ2460.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BJ10818.h" />
-    <ClInclude Include="BJ2460.h" />
-    <ClInclude Include="main.h" />
+    <ClCompile Include="SLL.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

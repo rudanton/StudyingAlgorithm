@@ -25,12 +25,6 @@
     <Filter Include="소스 파일\Programers">
       <UniqueIdentifier>{de4f692b-965e-4c92-aa93-f29b83f4dedd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\BackJoon\No. 2908 const num">
-      <UniqueIdentifier>{ab14d5f3-fb69-4d6c-a011-12f617c70e59}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\BackJoon\No. 5622 Dial Number">
-      <UniqueIdentifier>{2ca4f892-5d50-40bd-80a4-13b401ac44fd}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -42,12 +36,6 @@
     <ClInclude Include="BJ2460.h">
       <Filter>소스 파일\BackJoon\No. 2460. Inteligent Train</Filter>
     </ClInclude>
-    <ClInclude Include="BJ2908.h">
-      <Filter>소스 파일\BackJoon\No. 2908 const num</Filter>
-    </ClInclude>
-    <ClInclude Include="BJ5622.h">
-      <Filter>소스 파일\BackJoon\No. 5622 Dial Number</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -58,12 +46,6 @@
     </ClCompile>
     <ClCompile Include="BJ2460.cpp">
       <Filter>소스 파일\BackJoon\No. 2460. Inteligent Train</Filter>
-    </ClCompile>
-    <ClCompile Include="BJ2908.cpp">
-      <Filter>소스 파일\BackJoon\No. 2908 const num</Filter>
-    </ClCompile>
-    <ClCompile Include="BJ5622.cpp">
-      <Filter>소스 파일\BackJoon\No. 5622 Dial Number</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

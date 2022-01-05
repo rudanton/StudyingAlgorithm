@@ -1,34 +1,32 @@
 #include"main.h"
 
-int solution(string in)
-{
-	int a = 0;
-	vector<int> ans;
-	for (int i = 0; i < in.size(); i++)
+string solution(vector<int> numbers) {
+	string answer = "";
+	vector<int> list;
+	for (int i : numbers)
 	{
-		a = (int)in[i];
-		a -= 65;
-		a /= 3;
-		a += 3;
-		ans.push_back(a);
+		if (i == 0)list.push_back(0);
+		while (i)
+		{
+			list.push_back(i % 10);
+			i /= 10;
+		}
 	}
-	a = 0;
-	for (int x : ans)
+	sort(list.begin(), list.end());
+	reverse(list.begin(), list.end());
+	for (int i = 0; i < list.size(); i++)
 	{
-		printf("%d ", x);
-		a += x;
+		cout << list[i] << ", ";
+		char alpha[16];
+		_itoa_s(list[i], alpha, 16);
+		cout << alpha << endl;
+		answer += alpha;
 	}
-	
-	return a;
+	return answer;
 }
-
-
 int main()
 {
-	string input;
-
-	cin >> input;
-	
-	cout <<endl<< solution(input);
-
+	vector<int> test = { 3, 30, 34, 5, 9 };
+	string tmp = solution(test);
+	cout << endl << tmp;
 }
