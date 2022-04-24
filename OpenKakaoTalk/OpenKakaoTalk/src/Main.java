@@ -1,14 +1,16 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Main {
     public static String[] solution(String[] record) {
         HashMap<String, String> inputParser = new HashMap<>();
-        HashMap<String, Integer> indexBuffer = new HashMap<>();
-        String[] answer = record;
+        String[] answer;
+        ArrayList<String> answerBuffer = new ArrayList<>();
         for (int i = 0; i < record.length; i++) {
             String[] parsedString = record[i].split(" ");
             switch (parsedString[0]) {
                 case "Enter":
+                    inputParser.put(parsedString[1], parsedString[2]);
                 case "Change":
                     inputParser.put(parsedString[1], parsedString[2]);
                     break;
@@ -17,22 +19,22 @@ public class Main {
             }
 
         }
-        String a = "";
+
         for (int i = 0; i < record.length; i++) {
             String[] parsedString = record[i].split(" ");
             switch (parsedString[0]) {
                 case "Enter":
-                    a +=  inputParser.get(parsedString[1]) + "님이 들어왔습니다.";
+                    answerBuffer.add(inputParser.get(parsedString[1]) + "님이 들어왔습니다.");
                     break;
                 case "Leave" :
-                    a += inputParser.get(parsedString[1]) + "님이 나갔습니다.";
+                    answerBuffer.add(inputParser.get(parsedString[1]) + "님이 나갔습니다.");
                     break;
                 default:
                     break;
             }
-            a += "A";
         }
-        return a.split("A");
+        answer = answerBuffer.toArray(new String[0]);
+        return answer;
     }
 
     public static void main(String[] args) {
