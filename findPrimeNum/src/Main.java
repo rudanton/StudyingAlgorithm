@@ -1,33 +1,52 @@
 import java.util.*;
 
 public class Main {
-    public ArrayList<String> arrayList = new ArrayList<>();
     public static void main(String[] args) {
-        String input;
-        Scanner scan = new Scanner(System.in);
-        input = scan.next();
-        char[] chars = input.toCharArray();
-        int index = chars.length;
-        boolean[] isCome = new boolean[index];
-
-        System.out.println("ÃÑ°³¼ö : " + TheNumP(chars));
-
+        FindPrimeNums(535);
     }
-    public static int TheNumP(char[] array){
-        int sum = 0;
-        for(int i = array.length ; i >0 ; i--)
+    public static ArrayList<Integer> FindPrimeNums(int maxNum){
+        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Boolean> isCheck = new ArrayList<>(Arrays.asList(true));
+        Boolean[] isChecked = new Boolean[maxNum];
+
+
+
+        for(int i = 1 ; i <= maxNum; i++)
         {
-            int p = 1;
-            for(int j = array.length ; j>=i; j--){
-                p *= j;
-                System.out.println("j : "+j);
-            }
-            sum+=p;
+//            isCheck.add(false);
+            isChecked[i-1] = false;
         }
-        System.out.println(sum);
-        return sum;
-    }
-    public static void addP(int depth, char[] array){
-        
+        for(int i = 2 ; i * i <= maxNum+1; i++)
+        {
+//            if(isCheck.get(i))continue;
+            if(isChecked[i-2]) continue;/*
+            for(int j = i*i;j<=maxNum;j+=i){
+                isCheck.set(j, true);
+            }*/
+            for(int j = i*i ; j<=maxNum+1 ; j+=i)
+            {
+                isChecked[j-2] = true;
+            }
+        }
+        /*list.clear();
+        for(int i = 2 ; i < isCheck.size();i++)
+        {
+            if(!isCheck.get(i)){
+                System.out.print(i +", ");
+            }
+            if(i%50 == 0 ) System.out.println();
+        }
+        System.out.println();*/
+        System.out.println();
+        for(int i = 0; i < isChecked.length; i++)
+        {
+            if(!isChecked[i]){
+                System.out.print((i+2) +", ");
+                list.add(i+2);
+            }
+            if(i%50 == 48 ) System.out.println();
+        }
+        System.out.println("\nArrayList : " + isCheck.size()  + "\tArray : " + isChecked.length);
+        return list;
     }
 }
