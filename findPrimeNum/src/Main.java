@@ -7,7 +7,8 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         input = scan.next();
         char[] chars = input.toCharArray();
-
+        int index = chars.length;
+        boolean[] isCome = new boolean[index];
 
         System.out.println("ÃÑ°³¼ö : " + TheNumP(chars));
 
@@ -27,17 +28,6 @@ public class Main {
         return sum;
     }
     public static void addP(int depth, char[] array){
-        int index = array.length;
-
-        for(int j = 0; j<array.length;j++){
-            boolean[] isCome = new boolean[index];
-            Arrays.fill(isCome, false);
-            for (int i = 0; i < depth; i++) {
-                int d = 0;
-                while (d<i){
-                    isCome[j] = true;
-                }
-            }
-        }
+        
     }
 }
